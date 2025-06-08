@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+}
+
+
+/* sidebar css  */
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+
+}
+
+.sidebar {
+    width: 25%;
+    background: #db5034;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    border-radius: 40px;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.sidebar h3,h4 {
+    margin-bottom: 10px;
+    color: black;
+    font-size: 22px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar li {
+    margin: 5px 0;
+}
+
+.sidebar p{
+    font-size: 18px;
+    color: #d8dfd8;
+}
+
+/* upload css  */
+.sidebar form {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.sidebar input[type="file"] {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sidebar button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar button:hover {
+    background-color: #45a049;
+}
+
+
+/* charts css  */
+
+.main-content {
+    width: 75%;
+    padding: 20px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.chart-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.chart-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.dropdown-controls {
+    margin-top: 20px;
+}
+
+
+/* insights  */
+.inclass{
+    justify-content: center;
+    background-color: #39536e;
+    border-radius: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 40px;
+}
+
+
+.insights-box {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+.insights-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.insight-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 12px 20px;
+    margin-bottom: 12px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    line-height: 1.5;
+    transition: transform 0.2s ease;
+}
+
+.insight-card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* .inclass {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 16px;
+} */
+
+.insight-card {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  background-color: #f5f5f5;  /* default background */
+  font-weight: normal;
+  transition: background-color 0.3s ease;
+}
+
+.insight-card.highlight-insight {
+  background-color: rgb(160, 203, 235); /* light blue background */
+  font-weight: bold;
+}
+
+
+/* rgb(160, 203, 235) */
